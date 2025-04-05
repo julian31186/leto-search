@@ -299,6 +299,8 @@ func tokenize(term string, val TermBody, stopWords map[string]bool, phrases chan
 	
 	for _,token := range tokens {
 
+		token := strings.ToLower(token)
+
 		_,ok := stopWords[token]
 		// Token is a stop word
 		if ok {
