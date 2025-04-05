@@ -6,6 +6,7 @@ import (
 )
 
 const resultLimit = 10
+const searchPhrase = ""
 
 // Ensure to only build the index if the index file is not populated. If it already is, read it into memory and use that
 
@@ -16,7 +17,7 @@ func main() {
 		return
 	}
 
-	results,err := search.Search("Naib",idx, resultLimit)
+	results,err := search.Search(searchPhrase, idx, resultLimit)
 	if err != nil {
 		fmt.Println("Error searching")
 		return
