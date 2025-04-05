@@ -51,6 +51,9 @@ func Search(searchSentence string, index map[string][]Phrase, resultLimit int) (
 	tokens := strings.Fields(searchSentence)
 	
 	for _,token := range tokens {
+		
+		token := strings.ToLower(token)
+
 		val,ok := index[token]
 		if !ok {
 			continue

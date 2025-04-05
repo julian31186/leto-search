@@ -6,7 +6,7 @@ import (
 )
 
 const resultLimit = 10
-const searchPhrase = ""
+const searchPhrase = "Sandtrout"
 
 // Ensure to only build the index if the index file is not populated. If it already is, read it into memory and use that
 
