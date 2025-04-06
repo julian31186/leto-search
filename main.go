@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
+
 	"leto-search/search"
 )
 
 const resultLimit = 10
-const searchPhrase = "Siona"
-
-// Ensure to only build the index if the index file is not populated. If it already is, read it into memory and use that
+const searchPhrase = "Tleilax"
 
 func main() {
+
 	idx, err := search.BuildIndex()
 	if err != nil {
 		fmt.Println(err)
